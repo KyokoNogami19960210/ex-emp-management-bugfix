@@ -108,10 +108,35 @@
               <fieldset>
                 <legend>従業員情報</legend>
                 <table class="table table-striped">
-                  <tr>
+                
+                                  <tr>
                     <th nowrap>従業員名</th>
                     <td>
-                      <span th:utext="${employee.name}">山田花子</span>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.name}"
+                      />
                     </td>
                   </tr>
                   <tr>
@@ -123,6 +148,293 @@
                       />
                     </td>
                   </tr>
+                  
+                　<tr>
+                    <th nowrap>性別</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.dependentsCount}"
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th nowrap>入社日</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.hireDate}"
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th nowrap>メールアドレス</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.mailAddress}"
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th nowrap>郵便番号</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.zipCode}"
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th nowrap>住所</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.address}"
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th nowrap>電話番号</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.telephone}"
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th nowrap>給料</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.dependentsCount}"
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th nowrap>特性</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.dependentsCount}"
+                      />
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th nowrap>扶養人数</th>
+                    <td>
+                      <label
+                        th:errors="*{dependentsCount}"
+                        class="error-messages"
+                      >
+                        扶養人数を入力してください
+                      </label>
+                      <label
+                        class="control-label"
+                        style="color: red"
+                        for="dependentsCount"
+                      ></label>
+                      <input
+                        type="hidden"
+                        name="id"
+                        th:value="${employee.id}"
+                      />
+                      <input
+                        type="text"
+                        name="dependentsCount"
+                        id="dependentsCount"
+                        class="form-control"
+                        value="3"
+                        th:errorclass="error-input"
+                        th:value="${employee.dependentsCount}"
+                      />
+                    </td>
+                  </tr>
+                  
+      <!--            <tr>
+                    <th nowrap>従業員名</th>
+                    <td>
+                      <span th:utext="${employee.name}">山田花子</span>
+                    </td>
+                  </tr>  
+                  
                   <tr>
                     <th nowrap>性別</th>
                     <td>
@@ -178,7 +490,7 @@
                         >明るく素直な性格です。リーダーシップを発揮します。新卒社員研修の時はグループ開発の時にリーダーを買ってでました。積極性も人間性も抜群です。周りに対する不満も聞いたことがありません。</span
                       >
                     </td>
-                  </tr>
+                  </tr>　　　
                   <tr>
                     <th nowrap>扶養人数</th>
                     <td>
@@ -208,7 +520,7 @@
                         th:value="${employee.dependentsCount}"
                       />
                     </td>
-                  </tr>
+                  </tr>　　-->
                 </table>
                 <button type="submit" class="btn btn-primary">更新</button>
               </fieldset>
