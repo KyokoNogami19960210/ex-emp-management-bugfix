@@ -85,9 +85,22 @@ public class EmployeeController {
 			return showDetail(form.getId(), model);
 		}
 		Employee employee = new Employee();
+		
+		//扶養人数更新
 		employee.setId(form.getIntId());
-		employee.setDependentsCount(form.getIntDependentsCount());
+		employee.setDependentsCount(form.getDependentsCount());
+		employee.setName(form.getName());
+		employee.setHireDate(form.getHireDate());
+		employee.setMailAddress(form.getMailAddress());
+		employee.setZipCode(form.getZipCode());
+		employee.setAddress(form.getAddress());
+		employee.setTelephone(form.getTelephone());
+		employee.setSalary(form.getSalary());
+		employee.setCharacteristics(form.getCharacteristics());
+		
 		employeeService.update(employee);
 		return "redirect:/employee/showList";
+		
+		
 	}
 }

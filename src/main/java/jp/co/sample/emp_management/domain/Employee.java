@@ -3,7 +3,7 @@ package jp.co.sample.emp_management.domain;
 import java.util.Date;
 
 /**
- * 従業員情報を表すドメイン.
+ * 従業員情報を表すドメイン
  * 
  * @author igamasayuki
  * 
